@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en"
+
+<html>
+<body>
+
+<link rel="stylesheet" href="styles.css">
+<h1> Customer Information </h1>
+<form id="frm" action=""onsubmit="return validateform ()" method="post">
+  First name:<br> 
+  <input type="text" name="firstname"><br>
+  Last name:<br>
+  <input type="text" name="lastname"><br>
+  Email:<br>
+  <input type="text" name="Email"><br><br>
+<input type="submit" onclick="validateform" value="Submit">
+  
+<script>
+function validateform() {
+	var x = documents.forms["frm"]["firstname"].value;
+	var y = documents.forms["frm"]["lastname"].value;
+	var z = documents.forms["frm"]["Email"].value;
+	if (x== "" || y== "" || z== "") 
+	{
+	alert("Please fill out name");
+	return false;
+  	}
+}
+</script>
+</form>
+</body>
+</html>
